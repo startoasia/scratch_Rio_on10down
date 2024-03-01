@@ -1,0 +1,365 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* vertical-align: middle; */
+    display: block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* 定位 */
+.thing01-1 {
+    width: 50.1%;
+    left: 25.5%;
+    top: 28%;
+    -webkit-mask: url("../images/fv_title.png") no-repeat center center;
+    mask: url("../images/fv_title.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain
+}
+
+.thing01-2 {
+    width: 47.3%;
+    right: 0%;
+    bottom: 0;
+}
+
+.thing01-3 {
+    width: 30.3%;
+    left: 1.5%;
+    bottom: 2%;
+}
+
+.thing02-1 {
+    width: 47%;
+    left: 5.25%;
+    top: 36.5%;
+}
+
+.thing02-2 {
+    width: 47%;
+    right: 3.8%;
+    top: 48.3%;
+}
+
+.thing02-3 {
+    width: 47%;
+    left: 4.35%;
+    top: 69.75%;
+}
+
+.thing02-4 {
+    width: 47%;
+    right: 4.75%;
+    top: 81.65%;
+}
+
+@media (max-width:768px) {
+
+    .thing02-1 {
+        width: 42%;
+        left: 6.25%;
+        top: 38.5%;
+    }
+
+    .thing02-2 {
+        width: 42%;
+        right: 6.8%;
+        top: 48.3%;
+    }
+
+    .thing02-3 {
+        width: 42%;
+        left: 6.35%;
+        top: 76.75%;
+    }
+
+    .thing02-4 {
+        width: 42%;
+        right: 7.75%;
+        top: 83.65%;
+    }
+}
+
+.thing03-2 {
+    width: 100%;
+    height: 22%;
+    left: 0%;
+    bottom: 6%;
+    cursor: pointer;
+}
+
+.thing04-1 {
+    width: 23.5%;
+    left: 10%;
+    top: 24%;
+}
+
+.thing04-2 {
+    width: 39.7%;
+    left: 37%;
+    top: 29%;
+}
+
+.thing04-3 {
+    width: 23.5%;
+    right: 8%;
+    top: 46%;
+}
+
+.thing04-4 {
+    width: 39.7%;
+    left: 25%;
+    top: 54%;
+}
+
+.thing04-5 {
+    width: 23.5%;
+    left: 11.5%;
+    top: 74%;
+}
+
+.thing04-6 {
+    width: 39.7%;
+    left: 38%;
+    top: 80%;
+}
+
+
+.thing05-1 {
+    width: 80.7%;
+    left: 9%;
+    top: 6%;
+}
+
+.thing05-2 {
+    width: 27.2%;
+    left: 5%;
+    bottom: 10%;
+}
+
+.thing05-3 {
+    width: 26.4%;
+    left: 35%;
+    bottom: 10%;
+}
+
+.thing05-4 {
+    width: 27.9%;
+    right: 7.5%;
+    bottom: 10%;
+}
+
+.thing08-1 {
+    width: 18.6%;
+    left: 18%;
+    bottom: 66%;
+    animation: popScale 2s infinite linear;
+}
+
+.thing08-2 {
+    width: 20.7%;
+    right: 16%;
+    bottom: 67%;
+    animation: popScale 2s .25s infinite linear;
+}
+
+.thing08-3 {
+    width: 19.4%;
+    left: 17%;
+    bottom: 39%;
+    animation: popScale 2s .5s infinite linear;
+}
+
+.thing08-4 {
+    width: 27.7%;
+    right: 13%;
+    bottom: 39%;
+    animation: popScale 2s .75s infinite linear;
+}
+
+.thing08-5 {
+    width: 100%;
+    height: 23%;
+    left: 0%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.thing09-1 {
+    width: 96.8%;
+    left: 1.2%;
+    bottom: 4%;
+    z-index: 1;
+}
+
+.thing09-2 {
+    width: 29.3%;
+    left: 2%;
+    bottom: 50%;
+}
+
+.thing09-3 {
+    width: 29.3%;
+    right: 2%;
+    bottom: 7%;
+}
+
+.thing10-1 {
+    width: 65%;
+    left: 17.5%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.thing12-1 {
+    width: 100%;
+    height: 25%;
+    left: 0%;
+    bottom: 0%;
+    cursor: pointer;
+}
+
+.thing22-1 {
+    width: 18.7%;
+    left: 23.5%;
+    bottom: 25%;
+    transition: all 2s;
+}
+
+.thing22Move {
+    left: 52%;
+}
+
+.thing23-1 {
+    width: 100%;
+    height: 18%;
+    left: 0%;
+    bottom: 26%;
+    cursor: pointer;
+}
+
+/* offer */
+.offerBtn {
+    transition: all .3s;
+}
+
+.offerBtn:hover {
+    opacity: 0.8;
+}
+
+.offerFirst {
+    width: 47.5%;
+    right: 5.5%;
+    bottom: 32%;
+}
+
+.offerMiddle {
+    width: 47.5%;
+    right: 4.5%;
+    bottom: 0%;
+}
+
+.offer01 {
+    width: 47.5%;
+    right: 4.5%;
+    top: 43%;
+}
+
+.offer02 {
+    width: 47.5%;
+    right: 4.5%;
+    bottom: 6%;
+}
+
+.offer03 {
+    width: 42.5%;
+    left: 4.25%;
+    bottom: 8%;
+}
+
+.offer04 {
+    width: 42.5%;
+    right: 4.25%;
+    bottom: 8%;
+}
+
+/* 倒數計時 */
+
+.clock-container {
+    color: #ffffff;
+    background: #f34032;
+    padding: 0.15em 0;
+    border-radius: 0.1em;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+#timer {
+    border-radius: 1.5px;
+    font-weight: bold;
+    margin: .5 .5em;
+    padding: 0 .5em;
+    letter-spacing: 0.1em;
+    color: #f9f9f9;
+}
+
+@media (max-width:768px) {
+    .clock-container {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:549px) {
+    .clock-container {
+        font-size: 1.35rem;
+    }
+}

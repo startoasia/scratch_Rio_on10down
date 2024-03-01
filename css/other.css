@@ -1,0 +1,131 @@
+.close_img {
+    width: 100%;
+    max-height: 0;
+    transition: max-height .8s cubic-bezier(1, 0.2, 0.2, 1);
+    overflow: hidden;
+}
+
+.show {
+    max-height: 5000px;
+}
+
+
+
+/* popUp  */
+
+.popUp__Btn {
+    cursor: pointer;
+}
+
+.popUp__Content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.8);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    /* cursor: pointer; */
+    overflow-y: scroll;
+
+}
+
+.popUp__Content::after {
+    /* content: ''; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../images/pop/popBG.png);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; */
+}
+
+.popUp__Content .innerBox {
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* top: 0%;
+    transform: translateX(-50%);
+    margin-top: 12.5%; */
+}
+
+/* @media (max-width:768px) {
+    .popUp__Content .innerBox {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0%;
+    }
+} */
+
+.popUp__Content .innerBox img {
+    width: 64%;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+.popUp__Content.active {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.closeBox {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.closeBtn {
+    font-size: 50px;
+    transition: all .3s;
+}
+
+.closeBox:hover>.closeBtn {
+    transform: rotate(90deg);
+}
+
+
+/* 關閉按鈕顏色 */
+
+.closeBox1 {
+    background: #fff;
+    color: #1A5132;
+}
+
+.closeBox1:hover {
+    background: #1A5132;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 576px) {
+    .closeBox {
+        width: 40px;
+        height: 40px;
+    }
+
+    .closeBtn {
+        font-size: 40px;
+    }
+}
